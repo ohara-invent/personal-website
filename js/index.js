@@ -13,15 +13,10 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Java", count: "236"},
-        {text: ".Net", count: "382"},
-        {text: "Php", count: "170"},
-        {text: "Ruby", count: "123"},
-        {text: "D", count: "12"},
-        {text: "Python", count: "170"},
-        {text: "C/C++", count: "382"},
-        {text: "Pascal", count: "10"},
-        {text: "Something", count: "170"},
+        {text: "Developer", count: "100"},
+        {text: "Entrepreneur", count: "382"},
+        {text: "Hacker", count: "170"},
+        {text: "Social Activist", count: "123"},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}

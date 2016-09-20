@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Hello Bubble Chart</title>
-  <meta charset="utf-8">
+    <title>Hello Bubble Chart</title>
+    <meta charset="utf-8">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='fonts/fonts.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cover.css">
 
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
 
-  <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
-  <script src="index.js"></script>
-  <style>
-    .bubbleChart {
-      min-width: 100px;
-      max-width: 700px;
-      height: 700px;
-      margin: 0 auto;
-    }
-    .bubbleChart svg{
-      background: #171717;
-    }
-    body {
-        background-color: #171717;
-        color: #FFA8A8;
-    }
-  </style>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-transform.js"></script>
+    <script src="js/extarray.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/micro-observer.js"></script>
+    <script src="js/microplugin.js"></script>
+    <script src="js/bubble-chart.js"></script>
+    <script src="js/central-click.js"></script>
+    <script src="js/lines.js"></script>
+
+    <script src="js/index.js"></script>
+    <style>
+        .bubbleChart {
+            min-width: 100px;
+            max-width: 700px;
+            height: 700px;
+            margin: 0 auto;
+        }
+        
+        .bubbleChart svg {
+            background: #171717;
+        }
+        
+        body {
+            background-color: #171717;
+            color: #FFA8A8;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <h1>Peter O'Hara Adu</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="bubbleChart"/>
-            </div>
-            <div class="col-md-4">
-                Timeline goes here
-            </div>
-        </div>
+
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">
+<!--                <img src="images/pp.jpg" alt="profile-photo" class="img-responsive thumbnail" width="100px">-->
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                    <img class="img-responsive thumbnail" alt="Brand" src="images/pp.jpg">
+                  </a>
+                            </div>
+                Peter O'Hara Adu
+              </h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <div class="cover-heading bubbleChart" />
+                    <!-- <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p> -->
+                </div>
+
+<!--
+   <div class="mastfoot">
+    <div class="inner">
+        <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
     </div>
+</div>
+-->
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
