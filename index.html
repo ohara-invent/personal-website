@@ -9,14 +9,11 @@
 
     <link href='fonts/fonts.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
-
-
-
-
 
     <script src="js/d3.min.js"></script>
     <script src="js/d3-transform.js"></script>
@@ -29,82 +26,83 @@
     <script src="js/lines.js"></script>
 
     <script src="js/index.js"></script>
-    <style>
-        .bubbleChart {
-            min-width: 100px;
-            max-width: 700px;
-            height: 700px;
-            margin: 0 auto;
-        }
-        
-        .bubbleChart svg {
-            background: #171717;
-        }
-        
-        body {
-            background-color: #171717;
-            color: #FFA8A8;
-        }
-        
-        html,
-        body {
-            height: 100%;
-        }
-    </style>
+
 </head>
 
 <body>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="site-wrapper">
 
-        <div class="site-wrapper-inner">
+      <div class="site-wrapper-inner">
 
-            <div class="cover-container">
+        <div class="cover-container">
 
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h3 class="masthead-brand">
-<!--                <img src="images/pp.jpg" alt="profile-photo" class="img-responsive thumbnail" width="100px">-->
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="#">
-                    <img class="img-responsive thumbnail" alt="Brand" src="images/pp.jpg">
-                  </a>
-                            </div>
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">
+                <img src="images/pp.jpg" alt="">
                 Peter O'Hara Adu
               </h3>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="inner cover">
-                    <div class="cover-heading bubbleChart" />
-                    <!-- <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p> -->
-                </div>
-
-<!--
-   <div class="mastfoot">
-    <div class="inner">
-        <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    </div>
-</div>
--->
-
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li>
+                        <a target="blank" href="https://www.facebook.com/ohara.invent">Facebook</a>
+                    </li>  &nbsp;|
+                  <li>
+                       <a target="blank" href="https://twitter.com/ohara_invent">Twitter</a>
+                   </li> &nbsp;|
+                  <li>
+                       <a target="blank" href="https://www.linkedin.com/in/peteroharaadu">LinkedIn</a>
+                   </li> &nbsp;|
+                  <li>
+                      <a target="blank" href="https://medium.com/@oharainvent">Medium</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
+          </div>
+
+          <div class="inner cover">
+            <!-- <h1 class="cover-heading">Cover your page.</h1> -->
+            <p class="lead">
+                <span class="bubbleChart"></span>
+            </p>
+            <p class="lead">
+              <!-- <a href="#" class="btn btn-lg btn-default">Learn more</a> -->
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>ohara.invent © 2016. All rights reserved.</p>
+            </div>
+          </div>
 
         </div>
 
-    </div>
+      </div>
 
+    </div>
 </body>
 
 </html>
