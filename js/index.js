@@ -91,7 +91,7 @@ $(document).ready(function () {
               textField: "count",
               style: {"font-size": "30px"},
               attr: {dy: "40px"}
-            },
+            }
             // {// Line #1
             //   textField: "count",
             //   // classed: {text: true},
