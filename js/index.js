@@ -13,7 +13,7 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Software\n Development", count: "100", subItems: "Android\n Web\n Machine Learning\n Python\n Java\n Matlab"},
+        {text: "Software Development", count: "100", subItems: "Android\n Web\n Machine Learning\n Python\n Java\n Matlab"},
         {text: "Peter O'Hara Adu", count: "382", subItems: "MEST\n Wires&Bytes\n NsesaFoundation"},
         {text: "Hacker", count: "170", subItems: "Arduino\n Raspberry Pi\n Circuit Bending\n Tinkering"},
         {text: "Music", count: "123", subItems: "Hillsong\n Linkin Park\n Adele\n Hans Zimmer\n Matthew West"},
